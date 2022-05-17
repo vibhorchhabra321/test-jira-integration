@@ -1,2 +1,2 @@
 # test-jira-integration
-test2
+UTX-1

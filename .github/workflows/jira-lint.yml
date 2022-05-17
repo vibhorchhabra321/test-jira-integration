@@ -5,11 +5,12 @@ jobs:
   jira-lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: cleartax/jira-lint@v0.0.1
+      - uses: vibhorchhabra0321/jira-lint@master
         name: jira-lint
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           jira-token: ${{ secrets.JIRA_TOKEN }}
+          jira-user: ${{ secrets.JIRA_USER }}
           jira-base-url: https://uneritx.atlassian.net
           skip-branches: '^(production-release|master|release\/v\d+)$'
           skip-comments: false
